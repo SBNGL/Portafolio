@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Sebastian G">
+    <meta name="description"
+        content="Portafolio de Sebastian G, estudiante de Tecnología en Desarrollo de Software — apasionado por crear soluciones digitales elegantes.">
+    <title>Sebastian G — Dev Portfolio</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sebastian G",
+      "url": "https://github.com/SBNGL",
+      "image": "perfil.png",
+      "jobTitle": "Estudiante de Tecnología en Desarrollo de Software",
+      "description": "Estudiante apasionado de Desarrollo de Software, enfocado en crear experiencias web limpias y eficientes.",
+      "sameAs": [
+        "https://github.com/SBNGL",
+        "https://linkedin.com/"
+      ],
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "SQL", "Java", "Python", "Git", "GitHub"],
+      "email": "mailto:gomezlermasebastian8@gmail.com"
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Animated canvas background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll progress -->
+    <div id="scroll-progress"></div>
+
+    <header>
+        <nav class="navbar">
+            <span class="nav-brand">SG</span>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-orb-wrap">
+            <div class="orb-ring orb-ring--1"></div>
+            <div class="orb-ring orb-ring--2"></div>
+            <div class="orb-ring orb-ring--3"></div>
+            <div class="orb-core">
+                <span class="orb-initials">SG</span>
+            </div>
+            <div class="orb-dot orb-dot--1"></div>
+            <div class="orb-dot orb-dot--2"></div>
+            <div class="orb-dot orb-dot--3"></div>
+        </div>
+        <section class="hero-text">
+            <p class="hero-eyebrow">Estudiante · Dev · Creador</p>
+            <h1 class="titulo">Hola, soy
+                <span class="nombre">
+                    <span class="glitch-wrap" data-text="" id="glitch-target">
+                        <span id="typing-text"></span><span class="cursor-blink" id="cursor-blink"></span>
+                    </span>
+                </span>
+            </h1>
+            <p class="primer-parrafo">
+                Estudiante de Tecnología en Desarrollo de Software, interesado en el desarrollo backend, la calidad del
+                software y la inteligencia artificial.
+            </p>
+            <div class="hero-cta">
+                <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+                <a href="#contacto" class="btn-ghost">Contáctame</a>
+            </div>
+        </section>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="sobre-mi" class="sobre-mi" data-animacion>
+        <p class="section-label">01 — Sobre mí</p>
+        <div class="sobre-mi-inner">
+            <div>
+                <h2>Un poco de mí</h2>
+                <p class="sobre-mi-parrafo">
+                    Soy estudiante de Desarrollo de Software con conocimientos en desarrollo web, backend y bases de
+                    datos. He trabajado con <strong>HTML, CSS, Java, Python, SQL y PostgreSQL</strong>, además de
+                    herramientas como Git, GitHub, Docker y Linux.<br><br>
+                    También tengo conocimientos en <strong>QA, pruebas de API y análisis de código con
+                        SonarQube</strong>.
+                    Además, he participado en el desarrollo de un agente de inteligencia artificial. Actualmente, estoy
+                    en
+                    proceso de aprendizaje de <strong>JavaScript, TypeScript y React</strong>, mientras continúo
+                    fortaleciendo mis habilidades en desarrollo de software.
+                </p>
+            </div>
+            <div class="sobre-mi-stats">
+                <div class="stat-box">
+                    <div class="stat-num">15+</div>
+                    <div class="stat-label">Tecnologías</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">1+</div>
+                    <div class="stat-label">Proyectos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">∞</div>
+                    <div class="stat-label">Ganas de aprender</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Dedicación</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="habilidades" class="habilidades" data-animacion>
+        <p class="section-label">02 — Habilidades</p>
+        <h2>Tecnologías y herramientas</h2>
+
+        <div class="skills-categories">
+
+            <div class="skill-category">
+                <p class="skill-category-title">Desarrollo</p>
+                <ul class="habilidades-lista">
+                    <li class="skill-tag">HTML</li>
+                    <li class="skill-tag">CSS</li>
+                    <li class="skill-tag">Java</li>
+                    <li class="skill-tag">Python</li>
+                    <li class="skill-tag">JavaScript <span class="learning-badge">Aprendiendo</span></li>
+                    <li class="skill-tag">TypeScript <span class="learning-badge">Aprendiendo</span></li>
+                    <li class="skill-tag">React <span class="learning-badge">Aprendiendo</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <p class="skill-category-title">Bases de datos</p>
+                <ul class="habilidades-lista">
+                    <li class="skill-tag">SQL</li>
+                    <li class="skill-tag">PostgreSQL</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <p class="skill-category-title">Herramientas</p>
+                <ul class="habilidades-lista">
+                    <li class="skill-tag">Git</li>
+                    <li class="skill-tag">GitHub</li>
+                    <li class="skill-tag">Docker</li>
+                    <li class="skill-tag">Linux</li>
+                    <li class="skill-tag">SonarQube</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <p class="skill-category-title">Áreas complementarias</p>
+                <ul class="habilidades-lista">
+                    <li class="skill-tag">QA / Testing</li>
+                    <li class="skill-tag">Pruebas de API</li>
+                    <li class="skill-tag">Agentes de IA</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="proyectos" class="proyectos" data-animacion>
+        <p class="section-label">03 — Proyectos</p>
+        <h2>Lo que he construido</h2>
+        <div class="proyectos-grid">
+            <article class="proyecto-card featured" id="campus-project">
+                <div class="proyecto-header"></div>
+                <div class="proyecto-info">
+                    <span class="badge">✦ Destacado</span>
+                    <h3>Proyecto Campus</h3>
+                    <p>Sistema integral desarrollado en Java enfocado en la gestión académica y administrativa de una
+                        institución educativa.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Backend</span>
+                        <span class="tag">Logic</span>
+                    </div>
+                    <a href="https://github.com/SBNGL/proyecto-campus" target="_blank" class="btn-proyecto">Ver en
+                        GitHub ↗</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card" id="nuevamente-project">
+                <div class="proyecto-header"></div>
+                <div class="proyecto-info">
+                    <span class="badge-colaborativo">👥 Colaborativo</span>
+                    <h3>NuevaMente</h3>
+                    <p class="proyecto-subtitulo">Plataforma educativa inteligente con IA</p>
+                    <p>Plataforma que utiliza inteligencia artificial generativa para transformar documentación técnica
+                        en materiales educativos personalizados. Participé como <span class="rol-qa">QA</span> — validando
+                        funcionalidades, ejecutando pruebas y documentando errores del sistema.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">QA / Testing</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">LangGraph</span>
+                        <span class="tag">IA generativa</span>
+                    </div>
+                    <a href="https://github.com/SBNGL/G10-LATAM-Equipo-18-NuevaMente" target="_blank"
+                        rel="noopener noreferrer" class="btn-proyecto">Ver en GitHub ↗</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card" id="aulaia-project">
+                <div class="proyecto-header"></div>
+                <div class="proyecto-info">
+                    <p class="proyecto-subtitulo">Proyecto personal · En desarrollo</p>
+                    <h3>AulaIA — Asistente académico inteligente</h3>
+                    <p>AulaIA es un asistente académico inteligente que estoy desarrollando localmente a partir de mi
+                        proyecto original Agente Corporativo. Su objetivo es ayudar a los estudiantes a organizar sus
+                        estudios, administrar sus tareas y aprender mediante inteligencia artificial.</p>
+                    <p><strong>Funcionalidades previstas:</strong> gestión de usuarios, asignaturas y tareas;
+                        organización de fechas de entrega, prioridades y estados; biblioteca de materiales de estudio
+                        en PDF; tutor inteligente basado en RAG que responda usando los documentos del estudiante; y
+                        seguimiento de actividades y progreso académico.</p>
+                    <p><strong>Versión original (repositorio público):</strong> Python, Streamlit, LangChain, Groq y
+                        FAISS.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Groq</span>
+                        <span class="tag">FAISS</span>
+                    </div>
+                    <p><strong>Evolución local en desarrollo (aún no publicada):</strong></p>
+                    <div class="proyecto-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">Alembic</span>
+                        <span class="tag">pytest</span>
+                        <span class="tag">Docker Compose</span>
+                        <span class="tag">Jenkins</span>
+                    </div>
+                    <a href="https://github.com/SBNGL/Agente-Corporativo.git" target="_blank"
+                        rel="noopener noreferrer" class="btn-proyecto">Ver repositorio original ↗</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card" id="buenaventura-reporta-project">
+                <div class="proyecto-header"></div>
+                <div class="proyecto-info">
+                    <span class="badge-colaborativo">👥 Proyecto colaborativo</span>
+                    <h3>Buenaventura Reporta</h3>
+                    <p>Proyecto colaborativo de desarrollo de una aplicación web orientada al reporte ciudadano en
+                        Buenaventura, concebida para facilitar la comunicación de reportes relacionados con la ciudad
+                        mediante una solución tecnológica.</p>
+                    <p>Participé en el proyecto como integrante del equipo de desarrollo.</p>
+                    <div class="proyecto-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                    </div>
+                    <a href="https://github.com/jav-19jm/Buenaventura-Reporta.git" target="_blank"
+                        rel="noopener noreferrer" class="btn-proyecto">Ver en GitHub ↗</a>
+                    <a href="http://buenaventura.ds1.eleueleo.com/" target="_blank" rel="noopener noreferrer"
+                        class="proyecto-link-secundario">Ver aplicación ↗</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contacto" class="contacto" data-animacion>
+        <div class="contacto-inner">
+            <div class="contacto-texto">
+                <p class="section-label">04 — Contacto</p>
+                <h2>¿Hablamos?</h2>
+                <p>Si tienes un proyecto, una idea o solo quieres saludar — mi bandeja está abierta. Respondo rápido.
+                </p>
+            </div>
+            <ul class="contacto-lista">
+                <li>
+                    <a href="mailto:sgl069517@gmail.com" class="contacto-item">
+                        <span class="contacto-item-icon">✉️</span>
+                        <span class="contacto-item-text">
+                            <span class="contacto-item-label">Email</span>
+                            <span class="contacto-item-value">sgl069517@gmail.com</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/SBNGL" target="_blank" rel="noopener noreferrer" class="contacto-item">
+                        <span class="contacto-item-icon">🐙</span>
+                        <span class="contacto-item-text">
+                            <span class="contacto-item-label">GitHub</span>
+                            <span class="contacto-item-value">@SBNGL</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sebastian-gomez-lerma-20906a336" target="_blank" rel="noopener noreferrer" class="contacto-item">
+                        <span class="contacto-item-icon">💼</span>
+                        <span class="contacto-item-text">
+                            <span class="contacto-item-label">LinkedIn</span>
+                            <span class="contacto-item-value">Sebastian G</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 <span>Sebastian G</span> — Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="animaciones.js"></script>
+</body>
+
+</html>
